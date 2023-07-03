@@ -1,0 +1,228 @@
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vaizr.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/vazir.woff2') format('woff2'),
+     url('../fonts/vazir.woff') format('woff'),
+     url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+    @font-face {
+        font-family: lalezar;
+        src: url('../fonts/Lalezar-Regular.ttf');
+}
+h4,h1{
+    font-family: lalezar;
+}
+body{
+    font-family: vazirNormal;
+}
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/* left side */
+.header-left{
+   background-color:#34B169;
+}
+.icon-phon{
+    width: 50px;
+}
+.contact:hover{
+    color:black !important;
+}
+.contact:hover svg{
+    color:black !important;
+}
+.btn-vrod{
+border-radius: 15px !important;
+}
+
+.btn-vrod:hover .svg-inline--fa {
+    color: black !important;
+}
+
+
+.hand-hold{
+    margin:65px 0 65px 0;
+}
+.btn-sabt{
+    padding: 15px 40px;
+    font-size: 38px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+.mosbat{
+    width: 40px;
+}
+/* right side */
+.nav-container{
+    position: absolute;
+    z-index: 2;
+}
+.navbar-light .navbar-toggler {
+    background-color: rgb(56, 56, 56);
+    border-radius: 0;
+    margin-right: 12px;
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.5s ease;
+}
+
+.carousel-img{
+    filter: brightness(50%);
+}
+.carousel-indicators [data-bs-target]{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border:2px solid #fff;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #fff !important;
+}
+.carousel-caption{
+    bottom: 46%;
+}
+.carousel-indicators{
+    z-index: 1 !important;
+}
+.box{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 20%;
+    right: 20%;
+}
+.dropdown-container{
+    background-color: rgba(255, 255, 250, 0.6);
+    border-radius: 10px;
+}
+.dropdown-button {
+    border-radius: 30px;
+    background-color: #34B169;
+    font-size: 12px;
+}
+.dropdown-button:focus{
+    box-shadow: none !important;
+    color: black !important;
+    background-color: #288650;
+
+}
+.dropdown-button:hover{
+    box-shadow: none !important;
+    color: black !important;
+    background-color: #288650;
+
+}
+.dropdown-toggle:focus{
+    box-shadow: none;
+}
+.btn-outline-success{
+    outline: #34B169 !important;
+}
+.show-slider:focus{
+    box-shadow: none !important;
+}
+/* owl */
+.owl-img{
+    border-radius: 10px 10px 0 0;
+}
+.bead-metr-img{
+    width: 15px !important;
+}
+.ghimat{
+background-color: #34B169;
+border-radius: 0 0 10px 10px;
+}
+/* media */
+
+@media (max-width: 991px) {
+
+    .offcanvas{
+        background-color: #34B169 !important;
+    }
+    .hand-hold img{
+        width: 10rem !important;
+    }
+    .box{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+    }
+    .hand-hold{
+        margin: 0;
+    }
+    .btn-sabt {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 767px){
+    .hand-hold img{
+        width: 9rem !important;
+    }
+    .hand-hold{
+        margin: 0;
+    }
+    .btn-sabt {
+        font-size: 25px;
+        padding: 15px 40px;
+        margin-bottom: 20px;
+    }
+    .caption1{
+        font-size: 19px !important;
+    }   
+    .caption2{
+        font-size: 12 !important;
+    } 
+} 
+@media (max-width: 575px){
+    .hand-hold img{
+        width: 6rem !important;
+    }
+    .carousel-indicators [data-bs-target]{
+        width: 10px;
+        height: 10px;
+    }
+    .carousel-caption h1{
+        font-size: 20px !important;
+        margin-bottom: 28px;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 20px;
+        height: 3px;
+    }
+    .navbar-brand img{
+        width: 75px;
+    }
+    .btn-sabt{
+        padding: 10px 30px;
+    }
+    .offcanvas-end{
+        width: 250px;
+    }
+    .hand-hold {
+        margin: 0 ;
+    }
+    .btn-sabt {
+        font-size: 25px;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+    }
+/* owl */
+    .caption1{
+        font-size: 19 !important;
+    }
+   
+} 
