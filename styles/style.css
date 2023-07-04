@@ -7,6 +7,17 @@
     font-family: Vazir;
     src: url(../fonts/v/Vazir-FD-WOL.ttf);
 }
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #34B169;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
 h4,h1,h2{
     font-family: lalezar;
 }
@@ -54,6 +65,9 @@ border-radius: 15px !important;
     width: 40px;
 }
 /* right side */
+.logo{
+    width: 8rem;
+}
 .nav-container{
     position: absolute;
     z-index: 2;
@@ -130,6 +144,9 @@ border-radius: 15px !important;
     box-shadow: none !important;
 }
 /* owl */
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: none;
+}
 .owl-dots{
     display: none;
 }
@@ -190,6 +207,7 @@ border-radius: 0 0 10px 10px;
 .about img{
     border-radius: 0 35% 0 0;
     border: 3px solid green;
+    width: 31rem;
 }
 .first-title{
     color: #288650;
@@ -206,6 +224,75 @@ border-radius: 0 0 10px 10px;
 }
 .card-border-2{
     border-radius: 0 0 0 30%;
+}
+/* satis */
+.satis{
+    height: 80vh !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../imge/20230502130920_[fpdl.in]_realtor-handing-smiley-couple-keys-their-new-home_23-2148895467.png);
+}
+.satis .icon{
+    width: 50px;
+}
+.fa-star {
+    color: #F5B412;
+    font-size: 10px;
+    padding: 0;
+}
+.box-1{
+    border-radius: 10px;
+    background-color: #ebebeb;
+    width: 150px;
+}
+.box-2{
+    border-radius: 10px;
+    background-color: #34B169;
+    width: 150px;
+}
+.box-3{
+    border-radius: 10px;
+    background-color: #ebebeb;
+    width: 150px;
+}
+/* call we */
+.title-call{
+    background-color: #fff;
+}
+.title-call h1{
+    padding: 100px;
+}
+.call-we-icon{
+    width: 40px;
+}
+.social{
+    overflow: hidden;
+    border-radius:50% 50% 0 0;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-image: url(../imge/pexels-devon-rockola-816198.jpg);
+    background-size: cover;
+}
+.back-call{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    background-color: #34B169;
+    opacity: 0.8;
+}
+.ok{
+    position: relative;
+    z-index: 2;
+}
+/* footer */
+.footer{
+    background-color: #fff;
 }
 /* media */
 
@@ -260,9 +347,18 @@ border-radius: 0 0 10px 10px;
     .caption-2{
         font-size: 12px !important;
     } 
+    .title-call h1 {
+        padding: 45px;
+    }
+    .satis-container{
+        width: 40% !important;
+    }
     
 } 
 @media (max-width: 575px){
+    .logo {
+        width: 11rem;
+    }
     .hand-hold img{
         width: 6rem !important;
     }
@@ -295,12 +391,22 @@ border-radius: 0 0 10px 10px;
         padding: 10px 30px;
         margin-bottom: 20px;
     }
+    .satis-container{
+        width: 45% !important;
+    }
 /* owl */
     .caption1{
         font-size: 19px !important;
     }
     .caption-2 {
         font-size: 16px !important;
+    }
+    /* call we */
+    .call-we-icon{
+        width: 30px;
+    }
+    .title-call h1 {
+        padding: 30px;
     }
    
 } 
